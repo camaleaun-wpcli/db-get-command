@@ -1,0 +1,33 @@
+{
+    "name": "camaleaun/db-get-command",
+    "description": "Get database from alias.",
+    "type": "wp-cli-package",
+    "homepage": "https://github.com/camaleaun/db-get-command",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gilberto Tavares",
+            "email": "camaleaun@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        },
+        "files": [ "db-get-command.php" ]
+    },
+    "require": {
+        "php": "^5.4 || ^7.0",
+        "wp-cli/wp-cli": "^2"
+    },
+    "require-dev": {
+        "wp-cli/wp-cli-tests": "^2.1"
+    },
+    "extra": {
+        "commands": [
+            "db get"
+        ]
+    }
+}
